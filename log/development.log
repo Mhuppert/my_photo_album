@@ -1,0 +1,136 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (94.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20100323190527)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100323190527')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pages")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 14:06:27) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 14:06:52) [GET]
+
+ActionController::RoutingError (No route matches "/store/my_photo_album" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 14:07:03) [GET]
+
+ActionController::RoutingError (No route matches "/store/page" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-23 14:07:10) [GET]
+
+ActionController::RoutingError (No route matches "/store/pages" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-23 14:07:28) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2121ms (View: 2106, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-03-23 14:07:33) [GET]
+Rendering template within layouts/pages
+Rendering pages/new
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-03-23 14:07:42) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"EwvYioVqpp+CcYxAim3SpxlNUGKEuSXNTxsOCbja0IM=", "page"=>{"title"=>"My trip"}}
+  [4;35;1mPage Create (16.0ms)[0m   [0mINSERT INTO "pages" ("updated_at", "title", "created_at") VALUES('2010-03-23 19:07:42', 'My trip', '2010-03-23 19:07:42')[0m
+Redirected to http://localhost:3000/pages/1
+Completed in 125ms (DB: 16) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-03-23 14:07:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/1]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-03-23 14:08:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/1/edit]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-23 14:08:40) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/pages]
