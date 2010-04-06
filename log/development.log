@@ -134,3 +134,24 @@ Processing PagesController#index (for 127.0.0.1 at 2010-03-23 14:08:40) [GET]
 Rendering template within layouts/pages
 Rendering pages/index
 Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/pages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20100323190527)
+Migrating to CreateChapters (20100406193256)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "chapters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "page_id" integer, "title2" varchar(255), "description" text, "image_url" varchar(255), "date_chapter" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100406193256')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mPRAGMA index_list("chapters")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pages")[0m

@@ -1,0 +1,28 @@
+<p>
+  <b>Page:</b>
+  <%=h @chapter.page_id %>
+</p>
+
+<p>
+  <b>Title2:</b>
+  <%=h @chapter.title2 %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @chapter.description %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @chapter.image_url %>
+</p>
+
+<p>
+  <b>Date chapter:</b>
+  <%=h @chapter.date_chapter %>
+</p>
+
+
+<%= link_to 'Edit', edit_chapter_path(@chapter) %> |
+<%= link_to 'Back', chapters_path %>
