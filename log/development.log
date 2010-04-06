@@ -434,3 +434,236 @@ Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:42:55) [GET]
 Rendering template within layouts/chapters
 Rendering chapters/index
 Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:46:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 3) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Task) on line #8 of app/views/chapters/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :page_id %><br />
+8:     <%= f.select(:task_id, Task.all.collect {|t| [ t.name, t.id ] }, { :include_blank => true }) %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :title2 %><br />
+
+    app/views/chapters/edit.html.erb:8
+    app/views/chapters/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-06 14:46:43) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:46:48) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 171ms (View: 156, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:46:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 3) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Task) on line #8 of app/views/chapters/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :page_id %><br />
+8:     <%= f.select(:task_id, Task.all.collect {|t| [ t.name, t.id ] }, { :include_blank => true }) %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :title2 %><br />
+
+    app/views/chapters/edit.html.erb:8
+    app/views/chapters/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-06 14:47:14) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:47:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Task) on line #8 of app/views/chapters/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :page_id %><br />
+8:     <%= f.select(:task_id, Task.all.collect {|t| [ t.name, t.id ] }, { :include_blank => true }) %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :title2 %><br />
+
+    app/views/chapters/edit.html.erb:8
+    app/views/chapters/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:47:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 2) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Task) on line #8 of app/views/chapters/edit.html.erb:
+5: 
+6:   <p>
+7:     <%= f.label :page_id %><br />
+8:     <%= f.select(:task_id, Task.all.collect {|t| [ t.name, t.id ] }, { :include_blank => true }) %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :title2 %><br />
+
+    app/views/chapters/edit.html.erb:8
+    app/views/chapters/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:47:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 2) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/chapters/2/edit]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:47:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/1/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-06 14:48:02) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"6", "image_url"=>"", "date_chapter(4i)"=>"19", "date_chapter(5i)"=>"39", "title2"=>"First day", "page_id"=>"3", "description"=>"This is the first day", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs=", "id"=>"1"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+  [4;35;1mChapter Update (0.0ms)[0m   [0mUPDATE "chapters" SET "page_id" = 3, "updated_at" = '2010-04-06 19:48:02' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/chapters/1
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/chapters/1]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:48:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/1]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:48:05) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:48:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/1/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-06 14:48:17) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"6", "image_url"=>"", "date_chapter(4i)"=>"19", "date_chapter(5i)"=>"39", "title2"=>"First day", "page_id"=>"1", "description"=>"This is the first day", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs=", "id"=>"1"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+  [4;36;1mChapter Update (0.0ms)[0m   [0;1mUPDATE "chapters" SET "page_id" = 1, "updated_at" = '2010-04-06 19:48:17' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/chapters/1
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters/1]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:48:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChapter Load (15.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/chapters/1]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:48:19) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters]
