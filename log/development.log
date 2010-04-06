@@ -155,3 +155,282 @@ Migrating to CreateChapters (20100406193256)
 [0m
   [4;36;1mSQL (16.0ms)[0m   [0;1mPRAGMA index_list("chapters")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pages")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-06 14:38:11) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-06 14:38:18) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2152ms (View: 2074, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-04-06 14:38:22) [GET]
+Rendering template within layouts/pages
+Rendering pages/new
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-04-06 14:38:40) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs=", "page"=>{"title"=>"Chicago"}}
+  [4;35;1mPage Create (0.0ms)[0m   [0mINSERT INTO "pages" ("updated_at", "title", "created_at") VALUES('2010-04-06 19:38:40', 'Chicago', '2010-04-06 19:38:40')[0m
+Redirected to http://localhost:3000/pages/2
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-06 14:38:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/pages/2]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-06 14:38:43) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-04-06 14:38:48) [GET]
+Rendering template within layouts/pages
+Rendering pages/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-04-06 14:39:00) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs=", "page"=>{"title"=>"Road Trip"}}
+  [4;36;1mPage Create (0.0ms)[0m   [0;1mINSERT INTO "pages" ("updated_at", "title", "created_at") VALUES('2010-04-06 19:39:00', 'Road Trip', '2010-04-06 19:39:00')[0m
+Redirected to http://localhost:3000/pages/3
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-06 14:39:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 3) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/pages/3]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-06 14:39:02) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:39:12) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-06 14:39:14) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 390ms (View: 390, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-06 14:40:00) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-06 14:40:03) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-06 14:40:33) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"6", "image_url"=>"", "date_chapter(4i)"=>"19", "date_chapter(5i)"=>"39", "title2"=>"First day", "page_id"=>"1", "description"=>"This is the first day", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('', '2010-04-06 19:40:33', 1, 'First day', 'This is the first day', '2010-04-06 19:39:00', '2010-04-06 19:40:33')[0m
+Redirected to http://localhost:3000/chapters/1
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:40:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 1) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/1]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:40:36) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-06 14:40:38) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-06 14:40:57) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"6", "image_url"=>"picture 1", "date_chapter(4i)"=>"19", "date_chapter(5i)"=>"41", "title2"=>"", "page_id"=>"1", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('picture 1', '2010-04-06 19:40:57', 1, '', '', '2010-04-06 19:41:00', '2010-04-06 19:40:57')[0m
+Redirected to http://localhost:3000/chapters/2
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:40:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 2) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/2]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:40:59) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-06 14:41:03) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-06 14:41:26) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"6", "image_url"=>"", "date_chapter(4i)"=>"19", "date_chapter(5i)"=>"41", "title2"=>"", "page_id"=>"1", "description"=>"This is what we see.", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs="}
+  [4;36;1mChapter Create (16.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('', '2010-04-06 19:41:26', 1, '', 'This is what we see.', '2010-04-06 19:41:00', '2010-04-06 19:41:26')[0m
+Redirected to http://localhost:3000/chapters/3
+Completed in 78ms (DB: 16) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:41:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 3) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/3]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:41:31) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-06 14:41:32) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-06 14:41:50) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"6", "image_url"=>"picutre a", "date_chapter(4i)"=>"19", "date_chapter(5i)"=>"41", "title2"=>"The museum", "page_id"=>"2", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('picutre a', '2010-04-06 19:41:50', 2, 'The museum', '', '2010-04-06 19:41:00', '2010-04-06 19:41:50')[0m
+Redirected to http://localhost:3000/chapters/4
+Completed in 140ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:41:50) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 4) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/4]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:41:52) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-06 14:41:57) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-06 14:42:21) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"6", "image_url"=>"Picture b", "date_chapter(4i)"=>"19", "date_chapter(5i)"=>"41", "title2"=>"The beach", "page_id"=>"2", "description"=>"We went to the beach", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"w54ONf3A1yKaSnrEYVHnnN/JBofoIIsjy8IYJMjRBTs="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('Picture b', '2010-04-06 19:42:21', 2, 'The beach', 'We went to the beach', '2010-04-06 19:41:00', '2010-04-06 19:42:21')[0m
+Redirected to http://localhost:3000/chapters/5
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:42:21) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 5) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/5]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:42:27) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-06 14:42:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 2) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/2/edit]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-06 14:42:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 3) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/3]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:42:55) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
