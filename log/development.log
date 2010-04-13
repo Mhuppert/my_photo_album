@@ -667,3 +667,70 @@ Processing ChaptersController#index (for 127.0.0.1 at 2010-04-06 14:48:19) [GET]
 Rendering template within layouts/chapters
 Rendering chapters/index
 Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-10 22:53:05) [GET]
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+Completed in 2463ms (View: 2443, DB: 1) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-10 22:53:19) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 55ms (View: 46, DB: 1) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-10 22:53:33) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"11", "image_url"=>"", "date_chapter(4i)"=>"03", "date_chapter(5i)"=>"53", "title2"=>"end of the trip", "page_id"=>"1", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"/knfOe+OP9OvZNWQup9Mk5Spw4y87M40+CfLP97bR2Q="}
+  [4;35;1mChapter Create (1.0ms)[0m   [0mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('', '2010-04-11 03:53:33', 1, 'end of the trip', '', '2010-04-11 03:53:00', '2010-04-11 03:53:33')[0m
+Redirected to http://localhost:3000/chapters/6
+Completed in 108ms (DB: 1) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-10 22:53:33) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 6) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 19ms (View: 10, DB: 1) | 200 OK [http://localhost/chapters/6]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-10 22:53:35) [GET]
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Completed in 44ms (View: 36, DB: 1) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-13 10:50:40) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2132ms (View: 2060, DB: 1) | 200 OK [http://localhost/pages]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-13 10:50:49) [GET]
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 1) [0m
+Completed in 418ms (View: 394, DB: 1) | 200 OK [http://localhost/chapters]

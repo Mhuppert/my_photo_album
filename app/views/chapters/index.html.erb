@@ -11,12 +11,12 @@
 
 <% @chapters.each do |chapter| %>
   <tr>
-    <td><%=h chapter.page_id %></td>
+    <td><%=h chapter.page.title %></td>
     <td><%=h chapter.title2 %></td>
     <td><%=h chapter.description %></td>
     <td><%=h chapter.image_url %></td>
     <td><%=h chapter.date_chapter %></td>
-    <td><%= link_to 'Show', chapter %></td>
+    
     <td><%= link_to 'Edit', edit_chapter_path(chapter) %></td>
     <td><%= link_to 'Destroy', chapter, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
