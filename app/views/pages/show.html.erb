@@ -1,15 +1,24 @@
-<p>
-  <b>Title:</b>
-  <%=h @page.title %>
-</p>
+
+<h1>  <%=h @page.title %> </h1>
+<br />
 
 <% for chapter in @page.chapters %>
-    <li><%=h chapter.title2%></li>
-    <li><%=h chapter.description%></li>
-    <li><%=h chapter.image_url%></li>
-  <% end %>
+  
+  <% if !chapter.title2.blank? -%>
+    <br /> <h2><%=h chapter.title2%></h2> <br />
+  <%end -%>
+  
+  <% if !chapter.description.blank? -%>
+    <%=h chapter.description%> <br /><br />
+  <%end -%>
+  
+  <% if !chapter.image_url.blank? -%>
+    <%=image_tag chapter.image_url, :class => 'list-image' %>
+  <%end -%>
 
+<% end %>
 
+<br />
 
 <%= link_to 'Edit', edit_page_path(@page) %> |
 <%= link_to 'Back', pages_path %>
