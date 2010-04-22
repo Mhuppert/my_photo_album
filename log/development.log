@@ -4196,3 +4196,3215 @@ Rendering template within layouts/pages
 Rendering pages/show
   [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
 Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-20 23:08:28) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2161ms (View: 2088, DB: 1) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:08:32) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 48ms (View: 38, DB: 3) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:09:54) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 29ms (View: 19, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:09:56) [GET]
+
+ActionController::RoutingError (No route matches "/pages/www.google.fr" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:10:53) [GET]
+
+ActionController::RoutingError (No route matches "/pages/www.google.fr" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:11:17) [GET]
+
+ActionController::RoutingError (No route matches "/pages/www.google.fr" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:11:21) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:11:23) [GET]
+  Parameters: {"id"=>"picture"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=picture):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:11:41) [GET]
+  Parameters: {"id"=>"picture"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=picture):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:11:44) [GET]
+  Parameters: {"id"=>"picture"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=picture):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (59.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:13:07) [GET]
+  Parameters: {"id"=>"picture"}
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=picture):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:14:41) [GET]
+  Parameters: {"id"=>"picture"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=picture):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:14:45) [GET]
+  Parameters: {"id"=>"picture"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=picture):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:14:48) [GET]
+  Parameters: {"id"=>"picture"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=picture):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-20 23:14:53) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/pages/]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-20 23:14:55) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/pages/6/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:14:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (2.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 29ms (View: 19, DB: 3) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:15:00) [GET]
+  Parameters: {"id"=>"edit_page_path(@page)"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=edit_page_path(@page)):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:15:27) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 29ms (View: 19, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:15:27) [GET]
+
+ActionController::RoutingError (No route matches "/edit_page_path(@page)" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:16:09) [GET]
+
+ActionController::RoutingError (No route matches "/edit_page_path(@page)" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:16:15) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 29ms (View: 19, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:16:18) [GET]
+
+ActionController::RoutingError (No route matches "/public/image/castelnaud/toto.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:16:52) [GET]
+
+ActionController::RoutingError (No route matches "/public/image/castelnaud/toto.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:16:54) [GET]
+
+ActionController::RoutingError (No route matches "/public/image/castelnaud/toto.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:16:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 30ms (View: 19, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:17:31) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 30ms (View: 21, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:18:09) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 96ms (View: 21, DB: 1) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:18:56) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 30ms (View: 19, DB: 1) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:19:01) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 35ms (View: 21, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:20:12) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:20:43) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 40ms (View: 27, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:21:40) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 33ms (View: 23, DB: 3) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:21:42) [GET]
+  Parameters: {"id"=>"<img"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=<img):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:21:48) [GET]
+  Parameters: {"id"=>"<img"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=<img):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:22:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 35ms (View: 25, DB: 1) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:23:00) [GET]
+  Parameters: {"id"=>"<img alt="}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=<img alt=):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:23:59) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (2.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 50ms (View: 36, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:24:17) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (2.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 111ms (View: 98, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:24:19) [GET]
+  Parameters: {"id"=>"<img alt="}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=<img alt=):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:24:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 41ms (View: 28, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:25:13) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (4.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 61ms (View: 41, DB: 5) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:25:42) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (3.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 61ms (View: 42, DB: 4) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:27:44) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 24ms (View: 14, DB: 1) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:32:33) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:32:41) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 34ms (View: 21, DB: 3) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:32:44) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 34ms (View: 21, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:32:47) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 33ms (View: 21, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:32:49) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 33ms (View: 20, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:32:53) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 34ms (View: 20, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:33:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 34ms (View: 20, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:33:05) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 33ms (View: 20, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:33:07) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 33ms (View: 20, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:33:09) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 34ms (View: 21, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:33:11) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 32ms (View: 20, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:33:21) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 34ms (View: 19, DB: 2) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-20 23:42:57) [GET]
+  [4;35;1mPage Load (16.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 15, DB: 16) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:42:59) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:43:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/R_castelnaud_IMG_6715.JPG" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:43:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/R_castelnaud_IMG_6716.JPG" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:43:06) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:43:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/R_castelnaud_IMG_6715.JPG" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:43:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/R_castelnaud_IMG_6712.JPG" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:43:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/R_castelnaud_IMG_6716.JPG" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:43:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/R_castelnaud_IMG_6712.JPG" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-20 23:43:23) [GET]
+  [4;36;1mChapter Load (16.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 359ms (View: 343, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-20 23:43:29) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 10) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters/10/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-20 23:43:45) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"20", "image_url"=>"/images/castelnaud/r_castelnaud_img_6712.jpg", "date_chapter(4i)"=>"18", "date_chapter(5i)"=>"09", "title2"=>"", "page_id"=>"6", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"/3zPRTwzG3njcW+Mko7vi1KHSSkrXQh+H1hUZAXY4i0=", "id"=>"10"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 10) [0m
+  [4;35;1mChapter Update (0.0ms)[0m   [0mUPDATE "chapters" SET "image_url" = '/images/castelnaud/r_castelnaud_img_6712.jpg', "updated_at" = '2010-04-21 04:43:45' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/chapters/10
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters/10]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-20 23:43:45) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 10) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/10]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-20 23:43:47) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 93ms (View: 93, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-20 23:43:50) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 13) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters/13/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-20 23:44:03) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"20", "image_url"=>"/images/castelnaud/r_castelnaud_img_6681.jpg", "date_chapter(4i)"=>"18", "date_chapter(5i)"=>"11", "title2"=>"", "page_id"=>"6", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"/3zPRTwzG3njcW+Mko7vi1KHSSkrXQh+H1hUZAXY4i0=", "id"=>"13"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 13) [0m
+  [4;36;1mChapter Update (0.0ms)[0m   [0;1mUPDATE "chapters" SET "image_url" = '/images/castelnaud/r_castelnaud_img_6681.jpg', "updated_at" = '2010-04-21 04:44:03' WHERE "id" = 13[0m
+Redirected to http://localhost:3000/chapters/13
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters/13]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-20 23:44:03) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 13) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/13]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-20 23:44:07) [GET]
+  [4;36;1mChapter Load (16.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 109ms (View: 93, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-20 23:44:13) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 16) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters/16/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-20 23:44:26) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"20", "image_url"=>"/images/castelnaud/r_castelnaud_img_6715.jpg", "date_chapter(4i)"=>"18", "date_chapter(5i)"=>"57", "title2"=>"", "page_id"=>"6", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"/3zPRTwzG3njcW+Mko7vi1KHSSkrXQh+H1hUZAXY4i0=", "id"=>"16"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 16) [0m
+  [4;35;1mChapter Update (0.0ms)[0m   [0mUPDATE "chapters" SET "image_url" = '/images/castelnaud/r_castelnaud_img_6715.jpg', "updated_at" = '2010-04-21 04:44:26' WHERE "id" = 16[0m
+Redirected to http://localhost:3000/chapters/16
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/chapters/16]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-20 23:44:26) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 16) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/16]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-20 23:44:28) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 124ms (View: 93, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-20 23:44:30) [GET]
+  Parameters: {"id"=>"17"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 17) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/17/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-20 23:44:44) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"20", "image_url"=>"/images/castelnaud/r_castelnaud_img_6716.jpg", "date_chapter(4i)"=>"18", "date_chapter(5i)"=>"57", "title2"=>"", "page_id"=>"6", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"/3zPRTwzG3njcW+Mko7vi1KHSSkrXQh+H1hUZAXY4i0=", "id"=>"17"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 17) [0m
+  [4;36;1mChapter Update (0.0ms)[0m   [0;1mUPDATE "chapters" SET "image_url" = '/images/castelnaud/r_castelnaud_img_6716.jpg', "updated_at" = '2010-04-21 04:44:44' WHERE "id" = 17[0m
+Redirected to http://localhost:3000/chapters/17
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters/17]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-20 23:44:44) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 17) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/17]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-20 23:44:50) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-20 23:44:56) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:44:59) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:45:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:45:17) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (16.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:45:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:45:58) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:45:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-20 23:46:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:46:19) [GET]
+  Parameters: {"id"=>"chapters"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=chapters):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-20 23:46:27) [GET]
+  Parameters: {"id"=>"chapter"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=chapter):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-20 23:46:33) [GET]
+  [4;36;1mChapter Load (15.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 78ms (View: 63, DB: 15) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-20 23:46:40) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 08:27:57) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2153ms (View: 2090, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:28:04) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:28:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:28:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:28:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:28:13) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:28:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:28:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:28:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:29:02) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:29:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:29:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:29:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:29:44) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (15.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 31ms (View: 16, DB: 15) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:29:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:29:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:29:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:30:23) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:30:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:30:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:30:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:32:54) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:32:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:32:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:32:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:32:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:33:07) [GET]
+  [4;35;1mChapter Load (16.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 421ms (View: 405, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-22 08:33:19) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 10) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters/10/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-22 08:34:05) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"20", "image_url"=>"6712.jpg", "date_chapter(4i)"=>"18", "date_chapter(5i)"=>"09", "title2"=>"", "page_id"=>"6", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs=", "id"=>"10"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 10) [0m
+  [4;36;1mChapter Update (0.0ms)[0m   [0;1mUPDATE "chapters" SET "image_url" = '6712.jpg', "updated_at" = '2010-04-22 13:34:05' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/chapters/10
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/chapters/10]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-22 08:34:05) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 10) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/10]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:34:10) [GET]
+  [4;36;1mChapter Load (16.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Completed in 62ms (View: 46, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 08:34:40) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:34:42) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:36:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:42:28) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:42:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:42:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:42:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:42:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:43:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:43:09) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:43:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6716.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:43:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6715.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:43:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/6712.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:43:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/r_castelnaud_img_6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 08:43:13) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#destroy (for 127.0.0.1 at 2010-04-22 08:43:18) [DELETE]
+  Parameters: {"authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs=", "id"=>"6"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 6) [0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 6) [0m
+  [4;35;1mChapter Destroy (0.0ms)[0m   [0mDELETE FROM "chapters" WHERE "id" = 8[0m
+  [4;36;1mChapter Destroy (0.0ms)[0m   [0;1mDELETE FROM "chapters" WHERE "id" = 9[0m
+  [4;35;1mChapter Destroy (0.0ms)[0m   [0mDELETE FROM "chapters" WHERE "id" = 10[0m
+  [4;36;1mChapter Destroy (0.0ms)[0m   [0;1mDELETE FROM "chapters" WHERE "id" = 11[0m
+  [4;35;1mChapter Destroy (0.0ms)[0m   [0mDELETE FROM "chapters" WHERE "id" = 12[0m
+  [4;36;1mChapter Destroy (0.0ms)[0m   [0;1mDELETE FROM "chapters" WHERE "id" = 13[0m
+  [4;35;1mChapter Destroy (0.0ms)[0m   [0mDELETE FROM "chapters" WHERE "id" = 14[0m
+  [4;36;1mChapter Destroy (0.0ms)[0m   [0;1mDELETE FROM "chapters" WHERE "id" = 15[0m
+  [4;35;1mChapter Destroy (0.0ms)[0m   [0mDELETE FROM "chapters" WHERE "id" = 16[0m
+  [4;36;1mChapter Destroy (0.0ms)[0m   [0;1mDELETE FROM "chapters" WHERE "id" = 17[0m
+  [4;35;1mPage Destroy (0.0ms)[0m   [0mDELETE FROM "pages" WHERE "id" = 6[0m
+Redirected to http://localhost:3000/pages
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/pages/6]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 08:43:18) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:43:23) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 08:43:25) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:43:30) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:45:36) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:46:22) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:47:08) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:48:26) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:50:02) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (undefined local variable or method `toto' for #<ActionView::Base:0xe1f5fb4>) on line #28 of app/views/pages/show.html.erb:
+25:   <%end -%>
+26:   
+27: <% end %>
+28:   <h2> <%=h picture_url(toto) %> </h2>
+29: <br />
+30: 
+31: <%= link_to 'Edit', edit_page_path(@page) %> |
+
+    app/views/pages/show.html.erb:28
+    app/controllers/pages_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:50:49) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:51:38) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-22 08:51:40) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-22 08:51:49) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"51", "title2"=>"TEST 1", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('', '2010-04-22 13:51:49', 7, 'TEST 1', '', '2010-04-22 13:51:00', '2010-04-22 13:51:49')[0m
+Redirected to http://localhost:3000/chapters/18
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-22 08:51:49) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/18]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:51:51) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-22 08:51:53) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-22 08:52:04) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"51", "title2"=>"", "page_id"=>"", "description"=>"Decription 1 juste pour voir une photo", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs="}
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-22 08:52:11) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"51", "title2"=>"", "page_id"=>"7", "description"=>"Decription 1 juste pour voir une photo", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('', '2010-04-22 13:52:11', 7, '', 'Decription 1 juste pour voir une photo', '2010-04-22 13:51:00', '2010-04-22 13:52:11')[0m
+Redirected to http://localhost:3000/chapters/19
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-22 08:52:11) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/19]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:52:13) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-22 08:52:14) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-22 08:52:35) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"6681.jpg", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"52", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('6681.jpg', '2010-04-22 13:52:35', 7, '', '', '2010-04-22 13:52:00', '2010-04-22 13:52:35')[0m
+Redirected to http://localhost:3000/chapters/20
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-22 08:52:35) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 20) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/20]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:52:37) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:52:39) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:52:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:54:07) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:54:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:55:58) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:55:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:57:02) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:57:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/6681.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-22 08:58:00) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 20) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/20/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-22 08:58:34) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"castelnaud_6693.jpg", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"52", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs=", "id"=>"20"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 20) [0m
+  [4;36;1mChapter Update (0.0ms)[0m   [0;1mUPDATE "chapters" SET "image_url" = 'castelnaud_6693.jpg', "updated_at" = '2010-04-22 13:58:34' WHERE "id" = 20[0m
+Redirected to http://localhost:3000/chapters/20
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters/20]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-22 08:58:34) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 20) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/20]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:58:37) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 08:58:39) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:58:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:58:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#images to jpg (for 127.0.0.1 at 2010-04-22 08:58:59) [GET]
+  Parameters: {"id"=>"castelnaudcastelnaud_6693"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 08:59:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 08:59:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/rcastelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:00:21) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:00:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#images to jpg (for 127.0.0.1 at 2010-04-22 09:00:24) [GET]
+  Parameters: {"id"=>"castelnaud_6693"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:01:21) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:01:22) [GET]
+
+ActionController::RoutingError (No route matches "/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:01:48) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:01:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:01:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:01:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/images/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:02:16) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:02:16) [GET]
+
+ActionController::RoutingError (No route matches "/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:02:57) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:03:24) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:03:26) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/castelnaud/castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:04:00) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:06:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:07:01) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:08:00) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:09:22) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:09:38) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (16.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 0, DB: 16) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 09:10:00) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:10:02) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:11:09) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:11:50) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:11:51) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:12:52) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:12:53) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:13:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:13:14) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:13:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:13:18) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 09:13:38) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:13:40) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:13:40) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:14:25) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:14:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (undefined method `picture_url' for #<ActionView::Base:0x79bd320>) on line #16 of app/views/pages/show.html.erb:
+13:   <%end -%>
+14:    
+15:   <% if !chapter.image_url.blank? -%>  
+16:     <a href="<%=picture_url(chapter.image_url) %>" ><%=image_tag "/images/castelnaud/r_" + chapter.image_url %></a>
+17:   <%end -%>
+18:   
+19:   
+
+    app/views/pages/show.html.erb:16
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:21:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:15:50) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (undefined method `picture_url' for #<ActionView::Base:0x849e1b8>) on line #16 of app/views/pages/show.html.erb:
+13:   <%end -%>
+14:    
+15:   <% if !chapter.image_url.blank? -%>  
+16:     <a href="<%=picture_url(chapter.image_url) %>" ><%=image_tag "/images/castelnaud/r_" + chapter.image_url %></a>
+17:   <%end -%>
+18:   
+19:   
+
+    app/views/pages/show.html.erb:16
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:25:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 09:18:02) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:18:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:18:07) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 09:18:48) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:18:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:19:42) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 09:19:55) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:19:57) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-22 09:20:10) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 250ms (View: 187, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-22 09:20:29) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"castelnaud_6683.jpg", "date_chapter(4i)"=>"14", "date_chapter(5i)"=>"20", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"EqqoDWmFr+mk9UTAEOS3aUc4ZBA/x3EkBFFx9PRkTqs="}
+  [4;35;1mChapter Create (0.0ms)[0m   [0mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('castelnaud_6683.jpg', '2010-04-22 14:20:29', 7, '', '', '2010-04-22 14:20:00', '2010-04-22 14:20:29')[0m
+Redirected to http://localhost:3000/chapters/21
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-22 09:20:29) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/21]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-22 09:20:33) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:20:36) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:21:16) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 4727ms (View: 4727, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 09:21:30) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 14:06:54) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 14:06:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
