@@ -7408,3 +7408,1166 @@ Rendering template within layouts/pages
 Rendering pages/show
   [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
 Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20100323190527)
+Migrating to CreateChapters (20100406193256)
+Migrating to AddPageDecriptionToPage (20100422233612)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "pages" ADD "page_description" text[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100422233612')[0m
+Migrating to AddDatePageToPage (20100422233806)
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "pages" ADD "date_page" datetime[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100422233806')[0m
+Migrating to AddPicturePageToPage (20100422234119)
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "pages" ADD "picture_page" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100422234119')[0m
+Migrating to AddPictureFolder (20100422234146)
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100422234146')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("chapters")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("pages")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 18:45:19) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2122ms (View: 2044, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 18:45:24) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 18:45:28) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-22 18:45:30) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+ERROR: compiling _run_erb_app47views47pages47edit46html46erb RAISED compile error
+c:/Users/somino/Ruby/my_photo_album/app/views/pages/edit.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...cat(( f.label :pictures folder ).to_s); @output_buffer.conca...
+                              ^
+Function body:           def _run_erb_app47views47pages47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Editing page</h1>\n"
+@output_buffer.concat "\n"
+ form_for(@page) do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :title ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :title ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.label :pictures folder ).to_s); @output_buffer.concat "<br />\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.text_field :picture_folder ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+@output_buffer.concat "  <p>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( f.submit 'Update' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </p>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to 'Show', @page ).to_s); @output_buffer.concat " |\n"
+@output_buffer.concat(( link_to 'Back', pages_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Users/somino/Ruby/my_photo_album/app/views/pages/edit.html.erb:23:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Users/somino/Ruby/my_photo_album/app/views/pages/edit.html.erb:11: syntax error, unexpected tIDENTIFIER, expecting ')'
+...cat(( f.label :pictures folder ).to_s); @output_buffer.conca...
+                              ^) on line #11 of app/views/pages/edit.html.erb:
+8:     <%= f.text_field :title %>
+9:   </p>
+10:   <p>
+11:     <%= f.label :pictures folder %><br />
+12:     <%= f.text_field :picture_folder %>
+13:   </p>
+14:   <p>
+
+    app/views/pages/edit.html.erb:23:in `compile!'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-22 18:47:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+
+ActionView::TemplateError (undefined method `picture_folder' for #<Page:0xa281464>) on line #12 of app/views/pages/edit.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :pictures %><br />
+12:     <%= f.text_field :picture_folder %>
+13:   </p>
+14:   <p>
+15:     <%= f.submit 'Update' %>
+
+    app/views/pages/edit.html.erb:12
+    app/views/pages/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-22 18:48:57) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+
+ActionView::TemplateError (undefined method `picture_folder' for #<Page:0xa3c5258>) on line #12 of app/views/pages/edit.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :picture_folder %><br />
+12:     <%= f.text_field :picture_folder %>
+13:   </p>
+14:   <p>
+15:     <%= f.submit 'Update' %>
+
+    app/views/pages/edit.html.erb:12
+    app/views/pages/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 18:49:50) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-04-22 18:49:52) [GET]
+Rendering template within layouts/pages
+Rendering pages/new
+
+ActionView::TemplateError (undefined method `picture_folder' for #<Page:0xa211c90>) on line #12 of app/views/pages/new.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :picture_folder %><br />
+12:     <%= f.text_field :picture_folder %>
+13:   </p>
+14:   <p>
+15:     <%= f.submit 'Create' %>
+
+    app/views/pages/new.html.erb:12
+    app/views/pages/new.html.erb:3
+    app/controllers/pages_controller.rb:32:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePages (20100323190527)
+Migrating to CreateChapters (20100406193256)
+Migrating to AddPageDecriptionToPage (20100422233612)
+Migrating to AddDatePageToPage (20100422233806)
+Migrating to AddPicturePageToPage (20100422234119)
+Migrating to AddPictureFolder (20100422234146)
+Migrating to AddPictureFolderToPage (20100422235346)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "pages" ADD "picture_folder" varchar(255)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100422235346')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("chapters")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pages")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 18:54:40) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2012ms (View: 1981, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-22 18:54:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7/edit]
+
+
+Processing PagesController#update (for 127.0.0.1 at 2010-04-22 18:55:27) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"AoWHfCF+SRrMfZXhJnY6lI5wqawE9YS/sjlUvZLN3pU=", "id"=>"7", "page"=>{"title"=>"New Trip", "picture_folder"=>"castelnaud"}}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Update (0.0ms)[0m   [0mUPDATE "pages" SET "updated_at" = '2010-04-22 23:55:27', "picture_folder" = 'castelnaud' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/pages/7
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 18:55:28) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 18:55:42) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-04-22 18:55:45) [GET]
+Rendering template within layouts/pages
+Rendering pages/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 18:55:47) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-04-22 18:55:50) [GET]
+Rendering template within layouts/pages
+Rendering pages/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 18:55:52) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 18:58:43) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 93ms (View: 78, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 18:59:32) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (undefined local variable or method `castelnaud' for #<ActionView::Base:0xa4624a4>) on line #16 of app/views/pages/show.html.erb:
+13:   <%end -%>
+14:    
+15:   <% if !chapter.image_url.blank? -%>  
+16:     <a href="<%="/images/" + castelnaud + "/" + chapter.image_url %>" ><%=image_tag @link + "r_" + chapter.image_url %></a>
+17:   <%end -%>
+18:   
+19:   
+
+    app/views/pages/show.html.erb:16
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:21:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:01:02) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:01:44) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:01:56) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:01:57) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:02:07) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:02:08) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:02:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/scastelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:02:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/castelnaud/scastelnaud_6683.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:04:30) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (undefined local variable or method `link' for #<ActionView::Base:0xa231ef0>) on line #18 of app/views/pages/show.html.erb:
+15:    link = "/images/" + @page.picture_folder + "/"
+16:    
+17:   <% if !chapter.image_url.blank? -%>  
+18:     <a href="<%= link + chapter.image_url %>" ><%=image_tag @link + "r_" + chapter.image_url %></a>
+19:   <%end -%>
+20:   
+21:   
+
+    app/views/pages/show.html.erb:18
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:05:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #18 of app/views/pages/show.html.erb:
+15:    @link = "/images/" + @page.picture_folder + "/"
+16:    
+17:   <% if !chapter.image_url.blank? -%>  
+18:     <a href="<%= @link + chapter.image_url %>" ><%=image_tag @link + "r_" + chapter.image_url %></a>
+19:   <%end -%>
+20:   
+21:   
+
+    app/views/pages/show.html.erb:18
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:06:07) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #18 of app/views/pages/show.html.erb:
+15:   
+16:    
+17:   <% if !chapter.image_url.blank? -%>  
+18:     <a href="<%= "/images/" + @page.picture_folder + "/" + chapter.image_url %>" ><%=image_tag @link + "r_" + chapter.image_url %></a>
+19:   <%end -%>
+20:   
+21:   
+
+    app/views/pages/show.html.erb:18
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:06:42) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #18 of app/views/pages/show.html.erb:
+15:   
+16:    
+17:   <% if !chapter.image_url.blank? -%>  
+18:     <a href="<%= "/images/" + @page.picture_folder + "/" + chapter.image_url %>" ><%=image_tag + "r_" + chapter.image_url %></a>
+19:   <%end -%>
+20:   
+21:   
+
+    app/views/pages/show.html.erb:18:in `image_tag'
+    app/views/pages/show.html.erb:18
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:07:04) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:07:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/r_castelnaud_6683.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:07:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:08:16) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:08:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/r_castelnaud_6683.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:08:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:09:47) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (undefined local variable or method `link_image' for #<ActionView::Base:0xa259ec8>) on line #18 of app/views/pages/show.html.erb:
+15:   link_image = "/image/" + @page.picture_folder + "/"
+16:    
+17:   <% if !chapter.image_url.blank? -%>  
+18:     <a href="<%= "/images/" + @page.picture_folder + "/" + chapter.image_url %>" ><%=image_tag link_image + "r_" + chapter.image_url %></a>
+19:   <%end -%>
+20:   
+21:   
+
+    app/views/pages/show.html.erb:18
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:10:23) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+) on line #18 of app/views/pages/show.html.erb:
+15:   @link_image = "/image/" + @page.picture_folder + "/"
+16:    
+17:   <% if !chapter.image_url.blank? -%>  
+18:     <a href="<%= "/images/" + @page.picture_folder + "/" + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url %></a>
+19:   <%end -%>
+20:   
+21:   
+
+    app/views/pages/show.html.erb:18
+    app/views/pages/show.html.erb:5
+    app/controllers/pages_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:11:42) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:11:43) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:11:43) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6683.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:12:15) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:12:17) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6693.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-22 19:12:17) [GET]
+
+ActionController::RoutingError (No route matches "/image/castelnaud/r_castelnaud_6683.jpg" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:12:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:13:33) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:13:37) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (1.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 30ms (View: 15, DB: 2) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:14:12) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+
+NameError (undefined local variable or method `page' for #<PagesController:0xa495ed0>):
+  app/controllers/pages_controller.rb:18:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:14:47) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:15:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 2) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:15:08) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:15:32) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 39ms (View: 24, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:15:38) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 23ms (View: 12, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:16:11) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 34ms (View: 19, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:17:43) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 23ms (View: 11, DB: 2) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#castelnaud to jpg (for 127.0.0.1 at 2010-04-22 19:17:46) [GET]
+  Parameters: {"id"=>"castelnaud_6693"}
+
+ActionController::UnknownAction (No action responded to castelnaud. Actions: create, destroy, edit, index, new, show, and update):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#castelnaud to jpg (for 127.0.0.1 at 2010-04-22 19:17:48) [GET]
+  Parameters: {"id"=>"castelnaud_6683"}
+
+ActionController::UnknownAction (No action responded to castelnaud. Actions: create, destroy, edit, index, new, show, and update):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:17:52) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 30ms (View: 16, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#castelnaud to jpg (for 127.0.0.1 at 2010-04-22 19:17:53) [GET]
+  Parameters: {"id"=>"castelnaud_6693"}
+
+ActionController::UnknownAction (No action responded to castelnaud. Actions: create, destroy, edit, index, new, show, and update):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#castelnaud to jpg (for 127.0.0.1 at 2010-04-22 19:17:55) [GET]
+  Parameters: {"id"=>"castelnaud_6683"}
+
+ActionController::UnknownAction (No action responded to castelnaud. Actions: create, destroy, edit, index, new, show, and update):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 19:18:01) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 87ms (View: 12, DB: 1) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-22 19:18:03) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 22ms (View: 11, DB: 0) | 200 OK [http://localhost/pages/7/edit]
+
+
+Processing PagesController#update (for 127.0.0.1 at 2010-04-22 19:18:12) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"AoWHfCF+SRrMfZXhJnY6lI5wqawE9YS/sjlUvZLN3pU=", "id"=>"7", "page"=>{"title"=>"New Trip", "picture_folder"=>"/images/castelnaud"}}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Update (1.0ms)[0m   [0mUPDATE "pages" SET "updated_at" = '2010-04-23 00:18:12', "picture_folder" = '/images/castelnaud' WHERE "id" = 7[0m
+Redirected to http://localhost:3000/pages/7
+Completed in 75ms (DB: 1) | 302 Found [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:18:12) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (1.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 17, DB: 1) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 19:18:19) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-22 19:18:22) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 21ms (View: 9, DB: 1) | 200 OK [http://localhost/pages/7/edit]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-22 19:18:25) [GET]
+  [4;36;1mPage Load (1.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 22ms (View: 12, DB: 1) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-22 19:18:32) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 24ms (View: 14, DB: 0) | 200 OK [http://localhost/pages/7]

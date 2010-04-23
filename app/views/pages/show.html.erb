@@ -12,8 +12,10 @@
     <%=h chapter.description%> <br /><br />
   <%end -%>
    
-  <% if !chapter.image_url.blank? -%>  
-    <a href="<%=@link + chapter.image_url %>" ><%=image_tag @link + "r_" + chapter.image_url %></a>
+   
+  <% if !chapter.image_url.blank? -%>
+    
+    <a href="<%= @link_image + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url %></a>
   <%end -%>
   
   
