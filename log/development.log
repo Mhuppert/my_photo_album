@@ -8693,3 +8693,185 @@ Rendering rescues/layout (not_found)
 Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:16:53) [GET]
 Rendering liste/index
 Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:29:15) [GET]
+  [4;35;1mSQL (15.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `order' for #<Class:0xa2ce1b0>):
+  app/models/page.rb:6:in `find_pages_for_display'
+  app/controllers/liste_controller.rb:4:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:29:38) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:29:41) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:36:11) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:36:33) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-23 13:36:46) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#new (for 127.0.0.1 at 2010-04-23 13:36:50) [GET]
+Rendering template within layouts/pages
+Rendering pages/new
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/new]
+
+
+Processing PagesController#create (for 127.0.0.1 at 2010-04-23 13:38:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"4M8NlLJ7TSKg2WUXSUnVwLq7GGI9YXrCKpYa1o0Do64=", "page"=>{"title"=>"Voyage à New York (11 - 2008)", "picture_folder"=>"newyork"}}
+  [4;35;1mPage Create (16.0ms)[0m   [0mINSERT INTO "pages" ("updated_at", "title", "date_page", "page_description", "picture_page", "picture_folder", "created_at") VALUES('2010-04-23 18:38:45', 'Voyage à New York (11 - 2008)', NULL, NULL, NULL, 'newyork', '2010-04-23 18:38:45')[0m
+Redirected to http://localhost:3000/pages/8
+Completed in 63ms (DB: 16) | 302 Found [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-23 13:38:45) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 8) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/8]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:38:50) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:39:54) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-23 13:41:05) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:43:46) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-23 13:43:47) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-23 13:43:54) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 8) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/pages/8]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:44:29) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-23 13:44:33) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-23 13:44:36) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 8) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/8]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:44:54) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-23 13:45:19) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering liste/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-23 13:45:25) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-23 13:45:29) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-23 13:45:36) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 94ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
