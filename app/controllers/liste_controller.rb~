@@ -12,7 +12,12 @@ class ListeController < ApplicationController
      
     @page = Page.find(params[:id])
     @link_image =  @page.picture_folder + "/"
-   
+    
+    puts "MERDA"
+    puts @page.picture_folder
+ 
+
+    
   end
 
 end

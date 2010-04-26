@@ -1,0 +1,143 @@
+/* ------------------------------
+Tutorial de cssdebutant.com (merci de laisser ce commentaire)
+------------------------------ */
+
+
+body
+{
+	margin: 0 auto ;
+	padding: 0 ;
+	text-align: center ;
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	background: #EEE ;
+
+}
+
+
+div#conteneur
+
+{
+	width: 780px ;
+	margin: 0 auto ;
+	text-align: left ;
+	background: #FFF ;
+	
+
+}
+
+h1#header
+{
+	height: 130px ;
+	background: url(top.jpg) no-repeat left top ;
+	margin: 0 ;
+	
+
+
+}
+
+
+h1#header a
+{
+
+	display: block ;
+        font-size: 0.8em ;
+	letter-spacing: 1px ;
+	color: #272B24 ;
+	text-decoration: none ;
+	position: relative ;
+	left: 30px ;
+	top: 45px ;
+	
+}
+
+
+ul#menu
+{
+	float:right;
+	height: 0px ;
+	margin: 0 ;
+	padding: 0px 80px 0px 0px ;
+	list-style-type: none ;
+
+}
+
+ul#menu h2
+{
+	padding-left: 0px ;
+	line-height: 30px ;
+	font-size: 1.4em ;
+	color: #F90 ;
+	
+}
+
+ul#menu a
+{
+
+	display: block ;
+      	position: relative ;
+	color: #000000 ;
+	left: 10px ;
+	top: 0px ;
+	font-size: 1em ;
+	text-decoration: none ;
+
+	
+}
+
+
+div#contenu
+{
+	padding: 0px 280px 15px 10px ;
+	border: 1.6px solid #CCC ;
+	
+}
+
+div#contenu h3
+{
+	padding-left: 25px ;
+	line-height: 25px ;
+	font-size: 1.8em ;
+	color: #F90 ;
+	border-bottom: 1px solid #F90 ;
+	
+}
+
+div#contenu p
+{
+	text-align: justify ;
+	text-indent: 0em ;
+	line-height: 1.7em ;
+}
+
+
+p#footer
+{
+        padding: 15px 0px 0px 30px ;
+	background: #EEE ;
+
+}
+
+pre
+{
+	overflow: auto ;
+}
+
+/* En passant on définit l'overflow de la balise pre à auto pour
+ permettre d'afficher des barres de défilement si le texte contenu
+  dans cette balise est trop grand */
+
+/* On doit donner une largeur au <pre> à cause d'Internet Explorer, 
+on ne va donc l'appliquer qu'à Internet Explorer en utilisant le 
+ commentaire conditionnel suivant, à placer dans la partie HTML, 
+ et plus précisément dans l'élément <head> : */
+<!--[if IE]>
+ <style type="text/css">
+ html pre
+{
+	width: 636px ;
+}
+
+
+FIN#
+
+

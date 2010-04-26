@@ -1,0 +1,23 @@
+<% @chapters.each do |chapter| %>
+ 	
+	<% if !chapter.title2.blank? -%>
+  	<br /> <h3><%=h chapter.title2%></h3> <br />
+  <%end -%>
+ <% if !chapter.description.blank? -%>
+    <%=h chapter.description%> <br /><br />
+ <%end -%>
+   
+   
+  <% if !chapter.image_url.blank? -%>
+    
+    <a href="<%= @link_image + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url %></a>
+  <%end -%>
+   
+   
+   
+<% end %> 
+ 
+ 
+
+  
+ 
