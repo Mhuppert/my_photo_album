@@ -16518,3 +16518,17 @@ Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:48:41) [GET]
 Rendering template within layouts/liste
 Rendering liste/index
 Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 11:08:47) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 78ms (View: 46, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 11:09:15) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
