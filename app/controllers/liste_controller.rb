@@ -1,7 +1,6 @@
 class ListeController < ApplicationController
   
   def index
-      puts @pages
       @pages = Page.find_pages_for_display
      
   end

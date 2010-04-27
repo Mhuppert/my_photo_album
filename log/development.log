@@ -13902,3 +13902,2619 @@ ActiveRecord::RecordNotFound (Couldn't find Page with ID=index):
 Rendered rescues/_trace (47.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 16:40:04) [GET]
+  [4;36;1mChapter Load (2.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 512ms (View: 487, DB: 3) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-26 19:46:26) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2028ms (View: 1997, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:46:30) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (15.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 16, DB: 15) | 200 OK [http://localhost/pages/7]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-26 19:46:37) [GET]
+
+ActionController::RoutingError (No route matches "/chapter/show" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:47:04) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 19:47:08) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 7) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Chapter with ID=7):
+  app/controllers/chapters_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 19:49:29) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 7) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Chapter with ID=7):
+  app/controllers/chapters_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 19:49:33) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 7) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Chapter with ID=7):
+  app/controllers/chapters_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:49:37) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 19:49:40) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 422ms (View: 422, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:50:54) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+ERROR: compiling _run_erb_app47views47pages47show46html46erb RAISED compile error
+c:/Users/somino/Ruby/my_photo_album/app/views/pages/show.html.erb:20: syntax error, unexpected ':', expecting ')'
+...hapters", :action => "index" :id => page.id ).to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47pages47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>  "; @output_buffer.concat((h @page.title ).to_s); @output_buffer.concat " </h1>\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+ for chapter in @page.chapters ; @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  ";  if !chapter.title2.blank? 
+@output_buffer.concat "    <br /> <h2>"; @output_buffer.concat((h chapter.title2).to_s); @output_buffer.concat "</h2> <br />\n"
+@output_buffer.concat "  "; end 
+@output_buffer.concat "  \n"
+@output_buffer.concat "  ";  if !chapter.description.blank? 
+@output_buffer.concat "    "; @output_buffer.concat((h chapter.description).to_s); @output_buffer.concat " <br /><br />\n"
+@output_buffer.concat "  "; end 
+@output_buffer.concat "   \n"
+@output_buffer.concat "   \n"
+@output_buffer.concat "  ";  if !chapter.image_url.blank? 
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <a href=\""; @output_buffer.concat(( @link_image + chapter.image_url ).to_s); @output_buffer.concat "\" >"; @output_buffer.concat((image_tag @link_image + "r_" + chapter.image_url ).to_s); @output_buffer.concat "</a>\n"
+@output_buffer.concat "  "; end 
+@output_buffer.concat "  \n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to "toto", :controller => "chapters", :action => "index" :id => page.id ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  \n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Users/somino/Ruby/my_photo_album/app/views/pages/show.html.erb:30:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Users/somino/Ruby/my_photo_album/app/controllers/pages_controller.rb:20:in `show'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Users/somino/Ruby/my_photo_album/app/views/pages/show.html.erb:20: syntax error, unexpected ':', expecting ')'
+...hapters", :action => "index" :id => page.id ).to_s); @output...
+                              ^) on line #20 of app/views/pages/show.html.erb:
+17:     <a href="<%= @link_image + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url %></a>
+18:   <%end -%>
+19:   
+20:   <%= link_to "toto", :controller => "chapters", :action => "index" :id => page.id %>
+21:   
+22:   
+23:   
+
+    app/views/pages/show.html.erb:30:in `compile!'
+    app/controllers/pages_controller.rb:20:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:51:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+
+ActionView::TemplateError (undefined local variable or method `page' for #<ActionView::Base:0x9ff5bdc>) on line #20 of app/views/pages/show.html.erb:
+17:     <a href="<%= @link_image + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url %></a>
+18:   <%end -%>
+19:   
+20:   <%= link_to "toto", :controller => "chapters", :action => "index", :id => page.id %>
+21:   
+22:   
+23:   
+
+    app/views/pages/show.html.erb:20
+    app/views/pages/show.html.erb:4
+    app/controllers/pages_controller.rb:20:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:51:54) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 19:51:58) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 109ms (View: 93, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:54:21) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 19:54:25) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 19:54:36) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/19/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 19:54:42) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"51", "title2"=>"", "page_id"=>"7", "description"=>"Decription 1 juste pour voir une photo", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"nsvOQ1pVZff6h1LrVhiRDGv4pScUg//lKaVTpsDHCOk=", "id"=>"19"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Redirected to http://localhost:3000/chapters/19
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/chapters/19]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 19:54:42) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/19]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 19:54:46) [GET]
+  [4;35;1mChapter Load (15.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 109ms (View: 94, DB: 15) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:55:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:56:43) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 19:56:59) [GET]
+  Parameters: {"id"=>"27"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 27) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/chapters/27/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:57:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:59:07) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#delete (for 127.0.0.1 at 2010-04-26 19:59:22) [GET]
+  Parameters: {"id"=>"30"}
+
+ActionController::UnknownAction (No action responded to delete. Actions: create, destroy, edit, index, new, show, and update):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 19:59:51) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (15.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 19:59:57) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/19]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 20:00:04) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:00:09) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (15.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-26 20:37:12) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:37:13) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#destroy (for 127.0.0.1 at 2010-04-26 20:37:19) [DELETE]
+  Parameters: {"authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"20"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 20) [0m
+  [4;35;1mChapter Destroy (0.0ms)[0m   [0mDELETE FROM "chapters" WHERE "id" = 20[0m
+Redirected to http://localhost:3000/chapters
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters/20]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 20:37:19) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (16.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 94ms (View: 78, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:37:24) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#destroy (for 127.0.0.1 at 2010-04-26 20:37:29) [DELETE]
+  Parameters: {"authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"30"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 30) [0m
+  [4;36;1mChapter Destroy (0.0ms)[0m   [0;1mDELETE FROM "chapters" WHERE "id" = 30[0m
+Redirected to http://localhost:3000/chapters
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/chapters/30]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 20:37:29) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 93ms (View: 78, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:37:34) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:37:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:37:53) [GET]
+  Parameters: {"id"=>"28"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 28) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/28/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:38:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:38:25) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:38:29) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 8) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/8]
+
+
+Processing ChaptersController#destroy (for 127.0.0.1 at 2010-04-26 20:38:32) [DELETE]
+  Parameters: {"authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"25"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 25) [0m
+  [4;35;1mChapter Destroy (0.0ms)[0m   [0mDELETE FROM "chapters" WHERE "id" = 25[0m
+Redirected to http://localhost:3000/chapters
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters/25]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 20:38:32) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:38:34) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 8) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/8]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:38:36) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 24) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/chapters/24/edit]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-26 20:39:39) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 78ms (View: 0, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:39:40) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (15.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:40:01) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 23) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/23/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:45:48) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 20:45:50) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-26 20:46:06) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"27", "image_url"=>"", "date_chapter(4i)"=>"01", "date_chapter(5i)"=>"45", "title2"=>"TEST", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc="}
+  [4;35;1mChapter Create (0.0ms)[0m   [0mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('', '2010-04-27 01:46:06', 7, 'TEST', '', '2010-04-27 01:45:00', '2010-04-27 01:46:06')[0m
+Redirected to http://localhost:3000/chapters/31
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 20:46:06) [GET]
+  Parameters: {"id"=>"31"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 31) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/31]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 20:46:12) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (16.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 94ms (View: 62, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:46:19) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:47:26) [GET]
+  Parameters: {"id"=>"29"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/29/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 20:47:36) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"25", "image_url"=>"castelnaud_6690.jpg", "date_chapter(4i)"=>"05", "date_chapter(5i)"=>"34", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"29"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Redirected to http://localhost:3000/chapters/29
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/chapters/29]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 20:47:36) [GET]
+  Parameters: {"id"=>"29"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/29]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 20:47:51) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"25", "image_url"=>"castelnaud_6690.jpg", "date_chapter(4i)"=>"05", "date_chapter(5i)"=>"34", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"29"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Redirected to http://localhost:3000/chapters/29
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/chapters/29]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 20:47:51) [GET]
+  Parameters: {"id"=>"29"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/29]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:47:54) [GET]
+  Parameters: {"id"=>"29"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/29/edit]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 20:47:56) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:48:23) [GET]
+  Parameters: {"id"=>"29"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/29/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 20:48:25) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"25", "image_url"=>"castelnaud_6690.jpg", "date_chapter(4i)"=>"05", "date_chapter(5i)"=>"34", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"29"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Redirected to http://localhost:3000/chapters/29
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/chapters/29]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 20:48:25) [GET]
+  Parameters: {"id"=>"29"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/29]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 20:48:26) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 125ms (View: 125, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:48:31) [GET]
+  Parameters: {"id"=>"29"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 29) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/29/edit]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-26 20:48:33) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:49:13) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 8) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/8]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:49:17) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 24) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (undefined local variable or method `pages_show' for #<ActionView::Base:0xa0ac634>) on line #32 of app/views/chapters/edit.html.erb:
+29: <% end %>
+30: 
+31: <%= link_to 'Show', @chapter %> |
+32: <%= link_to 'Back', pages_show %>
+
+    app/views/chapters/edit.html.erb:32
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:49:21) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:49:23) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (undefined local variable or method `pages_show' for #<ActionView::Base:0xa19df34>) on line #32 of app/views/chapters/edit.html.erb:
+29: <% end %>
+30: 
+31: <%= link_to 'Show', @chapter %> |
+32: <%= link_to 'Back', pages_show %>
+
+    app/views/chapters/edit.html.erb:32
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:51:09) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:51:11) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/21/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:53:18) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (15.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 78ms (View: 47, DB: 15) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:53:21) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/21/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:53:23) [GET]
+  Parameters: {"id"=>"show"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=show):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:53:37) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (16.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:53:39) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 109ms (View: 93, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:54:00) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/19/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:54:05) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:54:44) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (undefined local variable or method `page_id' for #<ActionView::Base:0x9f29a50>) on line #33 of app/views/chapters/edit.html.erb:
+30: 
+31: <%= link_to 'Show', @chapter %> |
+32: <%= puts pages_path %>
+33: <%= link_to 'Back', pages_path + "/" + page_id %>
+
+    app/views/chapters/edit.html.erb:33
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:54:59) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (can't convert Symbol into String) on line #33 of app/views/chapters/edit.html.erb:
+30: 
+31: <%= link_to 'Show', @chapter %> |
+32: <%= puts pages_path %>
+33: <%= link_to 'Back', pages_path + "/" + :page_id %>
+
+    app/views/chapters/edit.html.erb:33
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:55:47) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (can't convert nil into String) on line #33 of app/views/chapters/edit.html.erb:
+30: 
+31: <%= link_to 'Show', @chapter %> |
+32: <%= puts pages_path %>
+33: <%= link_to 'Back', pages_path + "/" + @page_id %>
+
+    app/views/chapters/edit.html.erb:33
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:56:31) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 19) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #33 of app/views/chapters/edit.html.erb:
+30: 
+31: <%= link_to 'Show', @chapter %> |
+32: <%= puts pages_path %>
+33: <%= link_to 'Back', pages_path + "/" + @chapter.page_id %>
+
+    app/views/chapters/edit.html.erb:33
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 20:57:49) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/21/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 20:59:49) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 171ms (View: 140, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:03:40) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:03:43) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (undefined local variable or method `page' for #<ActionView::Base:0x83a4988>) on line #34 of app/views/chapters/edit.html.erb:
+31: <%= link_to 'Show', @chapter %> |
+32: <%= puts pages_path %>
+33: <%= puts @chapter %>
+34:  <%= link_to "Back2", :controller => "pages", :action => "show", :id => page.id %>
+35: <%= link_to 'Back', pages_path + "/" + "7" %>
+
+    app/views/chapters/edit.html.erb:34
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (172.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:04:07) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:04:09) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 18) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Page with ID=18):
+  app/controllers/pages_controller.rb:16:in `show'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:09:06) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (undefined method `page_id' for #<ActionView::Helpers::FormBuilder:0x82fe920>) on line #5 of app/views/chapters/edit.html.erb:
+2: 
+3: <% form_for(@chapter) do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= puts f.page_id %>
+6: 
+7:   <p>
+8:     <%= f.label :page_id %><br />
+
+    app/views/chapters/edit.html.erb:5
+    app/views/chapters/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:09:30) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+
+ActionView::TemplateError (undefined local variable or method `page_id' for #<ActionView::Base:0x8495eb4>) on line #5 of app/views/chapters/edit.html.erb:
+2: 
+3: <% form_for(@chapter) do |f| %>
+4:   <%= f.error_messages %>
+5:   <%= puts page_id %>
+6: 
+7:   <p>
+8:     <%= f.label :page_id %><br />
+
+    app/views/chapters/edit.html.erb:5
+    app/views/chapters/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:09:47) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:11:01) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 21:15:25) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"51", "title2"=>"TEST 1", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Redirected to http://localhost:3000/chapters/18
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/chapters/18]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 21:15:25) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/18]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 21:17:25) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/18]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:17:29) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:17:32) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 21:17:34) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"", "date_chapter(4i)"=>"13", "date_chapter(5i)"=>"51", "title2"=>"TEST 1", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Redirected to http://localhost:3000/chapters/18
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/chapters/18]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 21:17:34) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/18]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:17:38) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-26 21:18:50) [GET]
+  [4;35;1mPage Load (1.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:18:53) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:18:55) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/chapters/21/edit]
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 21:18:57) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"castelnaud_6683.jpg", "date_chapter(4i)"=>"14", "date_chapter(5i)"=>"20", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"21"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/chapters_controller.rb:65:in `update'
+  app/controllers/chapters_controller.rb:62:in `update'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#update (for 127.0.0.1 at 2010-04-26 21:20:19) [PUT]
+  Parameters: {"commit"=>"Update", "chapter"=>{"date_chapter(3i)"=>"22", "image_url"=>"castelnaud_6683.jpg", "date_chapter(4i)"=>"14", "date_chapter(5i)"=>"20", "title2"=>"", "page_id"=>"7", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc=", "id"=>"21"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Redirected to http://localhost:3000/chapters/21
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/chapters/21]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 21:20:19) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 21) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/21]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:20:22) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:26:00) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:26:04) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 172ms (View: 156, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:29:39) [GET]
+  [4;36;1mChapter Load (16.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 63ms (View: 47, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:30:31) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '--- :id
+') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:30:42) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '--- :id
+') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:31:40) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:31:44) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '--- :id
+') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:32:26) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:32:30) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '--- :id
+') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:33:09) [GET]
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/chapters_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:39:39) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+ERROR: compiling _run_erb_app47views47pages47show46html46erb RAISED compile error
+c:/Users/somino/Ruby/my_photo_album/app/views/pages/show.html.erb:3: syntax error, unexpected ':', expecting ')'
+...hapters", :action => "index" :id => page.id ).to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47pages47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>  "; @output_buffer.concat((h @page.title ).to_s); @output_buffer.concat " </h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to "ASC Chapter", :controller => "chapters", :action => "index" :id => page.id ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />\n"
+@output_buffer.concat "\n"
+ for chapter in @page.chapters ; @output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  ";  if !chapter.title2.blank? 
+@output_buffer.concat "     <h2>"; @output_buffer.concat((h chapter.title2).to_s); @output_buffer.concat "</h2> \n"
+@output_buffer.concat "  "; end 
+@output_buffer.concat "  \n"
+@output_buffer.concat "  ";  if !chapter.description.blank? 
+@output_buffer.concat "    "; @output_buffer.concat((h chapter.description).to_s); @output_buffer.concat " <br /> \n"
+@output_buffer.concat "  "; end 
+@output_buffer.concat "   \n"
+@output_buffer.concat "   \n"
+@output_buffer.concat "  ";  if !chapter.image_url.blank? 
+@output_buffer.concat "    \n"
+@output_buffer.concat "    <a href=\""; @output_buffer.concat(( @link_image + chapter.image_url ).to_s); @output_buffer.concat "\" >"; @output_buffer.concat((image_tag @link_image + "r_" + chapter.image_url ).to_s); @output_buffer.concat "</a> \n"
+@output_buffer.concat "  "; end 
+@output_buffer.concat "  \n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to "Edit", :controller => "chapters", :action => "edit", :id => chapter.id ).to_s); @output_buffer.concat " \n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to 'Destroy', chapter, :confirm => 'Are you sure?', :controller => "chapters", :method => :delete ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( link_to 'New chapter',  new_chapter_path ).to_s); @output_buffer.concat "<br /> <br />\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  \n"
+@output_buffer.concat "  \n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<br />"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: c:/Users/somino/Ruby/my_photo_album/app/views/pages/show.html.erb:37:in `compile!'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+c:/Users/somino/Ruby/my_photo_album/app/controllers/pages_controller.rb:20:in `show'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/Ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/Ruby/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+c:/Ruby/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/Ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+c:/Users/somino/Ruby/my_photo_album/app/views/pages/show.html.erb:3: syntax error, unexpected ':', expecting ')'
+...hapters", :action => "index" :id => page.id ).to_s); @output...
+                              ^) on line #3 of app/views/pages/show.html.erb:
+1: <h1>  <%=h @page.title %> </h1>
+2: 
+3:   <%= link_to "ASC Chapter", :controller => "chapters", :action => "index" :id => page.id %>
+4: 
+5: <br />
+6: 
+
+    app/views/pages/show.html.erb:37:in `compile!'
+    app/controllers/pages_controller.rb:20:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:39:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+
+ActionView::TemplateError (undefined local variable or method `page' for #<ActionView::Base:0x8512ec8>) on line #3 of app/views/pages/show.html.erb:
+1: <h1>  <%=h @page.title %> </h1>
+2: 
+3:   <%= link_to "ASC Chapter", :controller => "chapters", :action => "index", :id => page.id %>
+4: 
+5: <br />
+6: 
+
+    app/views/pages/show.html.erb:3
+    app/controllers/pages_controller.rb:20:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:40:40) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:40:43) [GET]
+  Parameters: {"id"=>"7"}
+
+RuntimeError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+  app/controllers/chapters_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:41:59) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '--- :id
+') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:42:03) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '--- :id
+') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:42:58) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '--- :id
+') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:44:11) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:44:11) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" IN ('--- :id
+')) [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:44:41) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" IN ('--- :id
+')) [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:44:44) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" IN ('--- :id
+')) [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:46:54) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 21:47:05) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 21:47:23) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-26 21:47:44) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 21:53:44) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 21:54:00) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 21:54:47) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 21:54:49) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:54:54) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" IS NULL) [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:54:58) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" IS NULL) [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-26 21:59:34) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:59:35) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 21:59:37) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/chapters?id=7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 21:59:46) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 22:00:32) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 22:01:14) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (15.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-26 22:07:36) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 94ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-26 22:07:40) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 22:07:48) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" [0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 22:12:55) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" ORDER BY page_id[0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (16.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Completed in 62ms (View: 46, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 22:14:41) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" ORDER BY page_id[0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (16.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Completed in 62ms (View: 46, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-26 22:14:58) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 46ms (View: 46, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#create (for 127.0.0.1 at 2010-04-26 22:15:07) [POST]
+  Parameters: {"commit"=>"Create", "chapter"=>{"date_chapter(3i)"=>"27", "image_url"=>"", "date_chapter(4i)"=>"03", "date_chapter(5i)"=>"14", "title2"=>"TEST XXX", "page_id"=>"8", "description"=>"", "date_chapter(1i)"=>"2010", "date_chapter(2i)"=>"4"}, "authenticity_token"=>"KMqAacOsLQxXWaiMQs6Fn7zJ2HagRnU8/+3LB7p91Bc="}
+  [4;36;1mChapter Create (0.0ms)[0m   [0;1mINSERT INTO "chapters" ("image_url", "updated_at", "page_id", "title2", "description", "date_chapter", "created_at") VALUES('', '2010-04-27 03:15:07', 8, 'TEST XXX', '', '2010-04-27 03:14:00', '2010-04-27 03:15:07')[0m
+Redirected to http://localhost:3000/chapters/32
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/chapters]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-26 22:15:07) [GET]
+  Parameters: {"id"=>"32"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 32) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/chapters/32]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-26 22:15:10) [GET]
+  [4;36;1mChapter Load (16.0ms)[0m   [0;1mSELECT * FROM "chapters" ORDER BY page_id[0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-27 10:22:02) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 2044ms (View: 2012, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-27 10:22:19) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#edit (for 127.0.0.1 at 2010-04-27 10:22:48) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/edit
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7/edit]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-04-27 10:24:11) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" [0m
+Rendering template within layouts/pages
+Rendering pages/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/pages]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-27 10:24:21) [GET]
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" ORDER BY page_id[0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Completed in 343ms (View: 343, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-27 10:24:45) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing ChaptersController#new (for 127.0.0.1 at 2010-04-27 10:26:41) [GET]
+Rendering template within layouts/chapters
+Rendering chapters/new
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/new]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-27 10:26:45) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" ORDER BY page_id[0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-27 10:26:47) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-27 10:26:49) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/pages/7]
+
+
+Processing PagesController#show (for 127.0.0.1 at 2010-04-27 10:28:04) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/pages
+Rendering pages/show
+  [4;35;1mChapter Load (15.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters".page_id = 7) [0m
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/pages/7]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-27 10:28:06) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 18) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/chapters/18/edit]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-27 10:28:09) [GET]
+  [4;35;1mChapter Load (16.0ms)[0m   [0mSELECT * FROM "chapters" ORDER BY page_id[0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Completed in 63ms (View: 47, DB: 16) | 200 OK [http://localhost/chapters]
+
+
+Processing ChaptersController#edit (for 127.0.0.1 at 2010-04-27 10:28:11) [GET]
+  Parameters: {"id"=>"32"}
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."id" = 32) [0m
+Rendering template within layouts/chapters
+Rendering chapters/edit
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/32/edit]
+
+
+Processing ChaptersController#show (for 127.0.0.1 at 2010-04-27 10:28:13) [GET]
+  Parameters: {"id"=>"32"}
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."id" = 32) [0m
+Rendering template within layouts/chapters
+Rendering chapters/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/chapters/32]
+
+
+Processing ChaptersController#index (for 127.0.0.1 at 2010-04-27 10:28:14) [GET]
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" ORDER BY page_id[0m
+Rendering template within layouts/chapters
+Rendering chapters/index
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/chapters]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:28:27) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:29:05) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:29:08) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/liste/show/7]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:29:10) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '8') [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/liste/show/8]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:29:13) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/liste/show/7]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:29:28) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '8') [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/liste/show/8]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:29:29) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/liste/show/7]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:31:10) [GET]
+  [4;36;1mPage Load (15.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:31:12) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '8') [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/liste/show/8]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:31:17) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '8') [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/liste/show/8]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:31:20) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/liste/show/7]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:31:22) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;35;1mChapter Load (16.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '8') [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/liste/show/8]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:31:23) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+  [4;35;1mPage Load (15.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://localhost/liste/show/7]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:33:15) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '8') [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/liste/show/8]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:33:17) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/liste/show/7]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:38:29) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mPage Load (16.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;35;1mChapter Load (0.0ms)[0m   [0mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '7') [0m
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" WHERE ("pages"."id" = 7) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 15, DB: 16) | 200 OK [http://localhost/liste/show/7]
+
+
+Processing ListeController#show (for 127.0.0.1 at 2010-04-27 10:41:26) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+  [4;36;1mChapter Load (0.0ms)[0m   [0;1mSELECT * FROM "chapters" WHERE ("chapters"."page_id" = '8') [0m
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" WHERE ("pages"."id" = 8) [0m
+Rendering template within layouts/liste
+Rendering liste/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/liste/show/8]
+
+
+Processing ListeController#listes (for 127.0.0.1 at 2010-04-27 10:41:33) [GET]
+
+ActionController::UnknownAction (No action responded to listes. Actions: index and show):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ListeController#liste (for 127.0.0.1 at 2010-04-27 10:41:37) [GET]
+
+ActionController::UnknownAction (No action responded to liste. Actions: index and show):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:41:43) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:41:47) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:42:55) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:46:21) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:46:26) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:47:21) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:47:41) [GET]
+  [4;36;1mPage Load (16.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:48:18) [GET]
+  [4;35;1mPage Load (0.0ms)[0m   [0mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/liste]
+
+
+Processing ListeController#index (for 127.0.0.1 at 2010-04-27 10:48:41) [GET]
+  [4;36;1mPage Load (0.0ms)[0m   [0;1mSELECT * FROM "pages" ORDER BY date_page[0m
+Rendering template within layouts/liste
+Rendering liste/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/liste]

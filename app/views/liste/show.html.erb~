@@ -1,7 +1,14 @@
+
+<br /> <h3><%=h @page.title %></h3> <br />
+
 <% @chapters.each do |chapter| %>
- 	
+
+
+ 	<%  @chap_title %>
 	<% if !chapter.title2.blank? -%>
-  	<br /> <h3><%=h chapter.title2%></h3> <br />
+
+	
+  	<br /> <br /><big> <big><%=h chapter.title2%></big> </big><br /><br />
   <%end -%>
  <% if !chapter.description.blank? -%>
     <%=h chapter.description%> <br /><br />
@@ -10,7 +17,7 @@
    
   <% if !chapter.image_url.blank? -%>
     
-    <a href="<%= @link_image + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url %></a>
+    <a href="<%= @link_image + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url, :style => "border: 0px solid ;" %></a>
   <%end -%>
    
    

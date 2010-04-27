@@ -2,7 +2,9 @@
 
 <% form_for(@chapter) do |f| %>
   <%= f.error_messages %>
- 
+  <%= puts "toto" %>
+  <%= puts :page_id %>
+
   <p>
     <%= f.label :page_id %><br />
     <%= f.text_field :page_id %>
@@ -29,4 +31,4 @@
 <% end %>
 
 <%= link_to 'Show', @chapter %> |
-<%= link_to 'Back', chapters_path %>
+<%= link_to 'Back', pages_path + "/" + "7" %>

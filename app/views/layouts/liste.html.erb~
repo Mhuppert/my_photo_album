@@ -12,9 +12,7 @@
      <h2>Menu : </h2>
 
   <% @pages.each do |page| %>
-    <li><%= link_to page.title, page %></li>
     <li><%= link_to page.title,:controller => "liste", :action => "show", :id => page.id %></li>
-    <li><%= page.id %></li>
   <% end %> 
 
    
