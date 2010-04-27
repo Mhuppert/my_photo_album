@@ -2,20 +2,18 @@
 
 <br />
 
-<% for chapter in @page.chapters %>
-  
-  <% if !chapter.title2.blank? -%>
-  	<h2><%=h chapter.title2%></h2> 
-  <%end -%>
-  
-  <% if !chapter.description.blank? -%>
-    <%=h chapter.description%> <br /> 
-  <%end -%>
-      
-  <% if !chapter.image_url.blank? -%>
-  	<a href="<%= @link_image + chapter.image_url %>" ><%=image_tag @link_image + "r_" + chapter.image_url %></a> <br /> 
-  <%end -%>
-   
-<% end %>
 
-<br />
+<ul id="page-list">
+	<% @page.chapters.each do |chapter| %>
+		<li id="chapter_<%= chapter.id %>">
+			<%= chapter.title2 %> -- <%= chapter.description %> -- <%= chapter.image_url %>
+		</li>
+	<% end %>
+</ul>
+
+
+<% puts "before" %>
+<%= sortable_element 'page-list',
+	:url => { :action => "sort", :id => @page },
+	:complete => visual_effect(:highlight, 'page-list')
+%>

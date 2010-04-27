@@ -3,6 +3,7 @@
 <table class="table">
   <tr>
     <th>Page</th>
+    <th>Position</th>
     <th>Title2</th>
     <th>Description</th>
     <th>Image url</th>
@@ -12,6 +13,7 @@
 <% @chapters.each do |chapter| %>
   <tr>
     <td><%=h chapter.page.title %></td>
+    <td><%=h chapter.position %></td>
     <td><%=h chapter.title2 %></td>
     <td><%=h chapter.description %></td>
     <td><%=h chapter.image_url %></td>

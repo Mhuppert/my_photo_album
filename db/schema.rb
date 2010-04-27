@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100422235346) do
+ActiveRecord::Schema.define(:version => 20100427190209) do
 
   create_table "chapters", :force => true do |t|
     t.integer  "page_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20100422235346) do
     t.datetime "date_chapter"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "pages", :force => true do |t|

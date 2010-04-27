@@ -3,7 +3,7 @@ class ChaptersController < ApplicationController
   # GET /chapters.xml
   def index
 	
-  	@chapters = Chapter.find(:all, :order => "page_id")
+  	@chapters = Chapter.find(:all, :order => "page_id, position")
 
     respond_to do |format|
       format.html # index.html.erb
