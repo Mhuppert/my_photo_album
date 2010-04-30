@@ -3,14 +3,13 @@ class PagesController < ApplicationController
   # GET /pages.xml
   
   def sort
-  puts "toto"
- @page = Page.find(params[:id])
- 	@page.chapters.each do |chapter|
- 		chapter.position = params['page-list'].index(chapter.id.to_s) + 1
- 		chapter.save
- 	end
- 	render :nothing => true
- end
+  	@page = Page.find(params[:id])
+  	@page.chapters.each do |chapter|
+  		chapter.position = params['page-list'].index(chapter.id.to_s) + 1
+  		chapter.save
+  	end
+  	render :nothing => true
+  end
   
   def index
     @pages = Page.all
