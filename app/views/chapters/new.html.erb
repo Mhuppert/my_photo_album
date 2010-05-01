@@ -5,8 +5,9 @@
 
   <p>
     <%= f.label :page_id %><br />
-    <%= f.select(:page_id, Page.all.collect {|t| [ t.title, t.id ] }, { :include_blank => true } ) %>
+    <%= f.select(:page_id, Page.all.collect {|t| [ t.title, t.id ] }, { :include_blank => true } ) %> 
   </p>
+  
   <p>
     <%= f.label :title2 %><br />
     <%= f.text_field :title2 %>

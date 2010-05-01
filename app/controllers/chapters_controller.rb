@@ -1,9 +1,16 @@
 class ChaptersController < ApplicationController
-  # GET /chapters
+  
+	# GET /chapters
   # GET /chapters.xml
   def index
-	
-  	@chapters = Chapter.find(:all, :order => "page_id, position")
+  		  
+	  @page_session = find_album
+	  
+	  for npage in @page_session.npages
+	  	s_page = npage.id
+	  end
+	 	  
+  	@chapters = Chapter.find(:all, :conditions => {:page_id => s_page}, :order => "page_id, position")
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,7 +32,15 @@ class ChaptersController < ApplicationController
   # GET /chapters/new
   # GET /chapters/new.xml
   def new
+  	
+  	@page_session = find_album
+	  
+	  for npage in @page_session.npages
+	  	s_page = npage.id
+	  end
+  	
     @chapter = Chapter.new
+    @chapter.page_id = s_page
 
     respond_to do |format|
       format.html # new.html.erb
@@ -83,4 +98,13 @@ class ChaptersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+
+  private
+  
+  # Session
+  def find_album
+  	session[:album]
+  end
+  
 end

@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.xml
   
+  
   def sort
   	@page = Page.find(params[:id])
   	@page.chapters.each do |chapter|
@@ -25,8 +26,7 @@ class PagesController < ApplicationController
   def show
     @page = Page.find(params[:id])
     
-    @link_image =  @page.picture_folder + "/"
-    
+      
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @page }
@@ -97,7 +97,6 @@ class PagesController < ApplicationController
   
   #DRAG AND DROP 
   def toto
-  	puts "titi"
   	@page = Page.find(params[:id])
   	@page.chapters.each do |chapter|
   		chapter.position = params['page'].index(chapter.id.to_s) + 1
@@ -105,4 +104,37 @@ class PagesController < ApplicationController
   	end
   	render :nothing => true
   end	
+  
+
+  #Sort Chapters
+  
+  def sort_c
+  	 page = Page.find(params[:id])
+  	@page = Page.find(params[:id])
+    
+    @link_image =  @page.picture_folder + "/"
+    
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+   end
+
+  
+  #session
+  def add_to_album
+  	 page = Page.find(params[:id])
+  	 @album = find_album
+  	 @album.add_page(page)
+  	
+  redirect_to :controller => 'chapters', :action => 'index'
+   end
+   
+    private
+  
+  def find_album
+  	session[:album] ||= Album.new
+  end
+  
+  
  end

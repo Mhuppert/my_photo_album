@@ -1,0 +1,19 @@
+<h1>  <%=h @page.title %> </h1>
+
+<br />
+
+
+<ul id="page-list">
+	<% @page.chapters.each do |chapter| %>
+		<li id="chapter_<%= chapter.id %>">
+			<%= chapter.title2 %> -- <%= chapter.description %> -- <%= chapter.image_url %>
+		</li>
+	<% end %>
+</ul>
+
+
+<% puts "before" %>
+<%= sortable_element 'page-list',
+	:url => { :action => "sort", :id => @page },
+	:complete => visual_effect(:highlight, 'page-list')
+%>

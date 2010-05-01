@@ -11,6 +11,8 @@
     <td><%= link_to 'Show', page %></td>
     <td><%= link_to 'Edit', edit_page_path(page) %></td>
     <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= button_to 'Add Chapters', :action => 'add_to_album', :id => page %></td>
+    <td><%= button_to 'Sort Chapters', :action => 'sort_c', :id => page %></td>
   </tr>
 <% end %>
 </table>
