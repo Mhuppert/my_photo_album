@@ -1,19 +1,12 @@
-<h1>  <%=h @page.title %> </h1>
+<p>
+  <b>Page:</b>
+  <%=h @page.title %>
+</p>
 
-<br />
+<p>
+  <b>Page:</b>
+  <%=h @page.picture_folder %>
+</p>
 
-
-<ul id="page-list">
-	<% @page.chapters.each do |chapter| %>
-		<li id="chapter_<%= chapter.id %>">
-			<%= chapter.title2 %> -- <%= chapter.description %> -- <%= chapter.image_url %>
-		</li>
-	<% end %>
-</ul>
-
-
-<% puts "before" %>
-<%= sortable_element 'page-list',
-	:url => { :action => "sort", :id => @page },
-	:complete => visual_effect(:highlight, 'page-list')
-%>
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
