@@ -119,7 +119,12 @@ class PagesController < ApplicationController
       format.xml  { render :xml => @page }
     end
    end
-
+  
+   # GO TO PAGES
+  def go_to_page
+  	
+  	redirect_to :action => 'index'
+  end
   
   #session
   def add_to_album

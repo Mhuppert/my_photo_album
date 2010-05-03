@@ -9,23 +9,24 @@
 </p>
 
 <p>
-  <b>Title2:</b>
-  <%=h @chapter.title2 %>
+	<% if !@chapter.title2.blank? -%>
+  	<b>Title2:</b>
+  	<%=h @chapter.title2 %>
+  <%end -%>
 </p>
 
 <p>
-  <b>Description:</b>
-  <%=h @chapter.description %>
+	<% if !@chapter.description.blank? -%>
+  	<b>Description:</b>
+  	<%=h @chapter.description %>
+  <%end -%>
 </p>
 
 <p>
-  <b>Image url:</b>
-  <%=h @chapter.image_url %>
-</p>
-
-<p>
-  <b>Date chapter:</b>
-  <%=h @chapter.date_chapter %>
+	<% if !@chapter.image_url.blank? -%>
+  	<b>Image url:</b>
+  	<%=h @chapter.image_url %>
+  <%end -%>
 </p>
 
 

@@ -7,11 +7,14 @@ class ChaptersController < ApplicationController
 	  @page_session = find_album
 	  
 	  for npage in @page_session.npages
+	  	#link_image =  npage.id.picture_folder + "/"
 	  	s_page = npage.id
 	  end
 	 	  
   	@chapters = Chapter.find(:all, :conditions => {:page_id => s_page}, :order => "page_id, position")
-
+  	
+ 
+  	
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @chapters }
@@ -41,13 +44,76 @@ class ChaptersController < ApplicationController
   	
     @chapter = Chapter.new
     @chapter.page_id = s_page
+   
+
 
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @chapter }
     end
   end
+  
+  def new_title
+  	
+  	@page_session = find_album
+	  
+	  for npage in @page_session.npages
+	  	s_page = npage.id
+	  end
+  	
+    @chapter = Chapter.new
+    @chapter.page_id = s_page
+   
 
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @chapter }
+    end
+  
+  end
+  
+  def new_text
+  	
+  	@page_session = find_album
+	  
+	  for npage in @page_session.npages
+	  	s_page = npage.id
+	  end
+  	
+    @chapter = Chapter.new
+    @chapter.page_id = s_page
+   
+
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @chapter }
+    end
+  
+  end
+  
+   def new_pic
+  	
+  	@page_session = find_album
+	  
+	  for npage in @page_session.npages
+	  	s_page = npage.id
+	  end
+  	
+    @chapter = Chapter.new
+    @chapter.page_id = s_page
+   
+
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @chapter }
+    end
+  
+  end
+  
+  
   # GET /chapters/1/edit
   def edit
     @chapter = Chapter.find(params[:id])
@@ -99,7 +165,13 @@ class ChaptersController < ApplicationController
     end
   end
   
-
+  # GO TO PAGES
+  def go_to_page
+  	
+  	redirect_to :controller => 'pages', :action => 'index'
+  end
+  
+   
   private
   
   # Session

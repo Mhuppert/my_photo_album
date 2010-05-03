@@ -1,13 +1,17 @@
 <h1>Listing chapters</h1>
 
+<%= button_to 'Go Back', :action => 'go_to_page' %>
+
+<br />
+
 <table class="table">
-  <tr>
+  
+	<tr>
     <th>Page</th>
     <th>Position</th>
-    <th>Title2</th>
+    <th>Title</th>
     <th>Description</th>
-    <th>Image url</th>
-    <th>Date chapter</th>
+    <th>Image</th>
   </tr>
 
 <% @chapters.each do |chapter| %>
@@ -16,9 +20,8 @@
     <td><%=h chapter.position %></td>
     <td><%=h chapter.title2 %></td>
     <td><%=h chapter.description %></td>
-    <td><%=h chapter.image_url %></td>
-    <td><%=h chapter.date_chapter %></td>
-    
+    <td><%=h chapter.image_url%></td>
+    <td><%= link_to 'Show', chapter %></td>
     <td><%= link_to 'Edit', edit_chapter_path(chapter) %></td>
     <td><%= link_to 'Destroy', chapter, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
@@ -26,5 +29,12 @@
 </table>
 
 <br />
+<table>
+	 <tr>
+	 	<td><%= button_to 'New Title', :action => 'new_title' %></td>
+	 	<td><%= button_to 'New Text', :action => 'new_text' %></td>
+	 	<td><%= button_to 'New Picture', :action => 'new_pic' %></td>
+		</tr>
+</table
 
-<%= link_to 'New chapter', new_chapter_path %>
+

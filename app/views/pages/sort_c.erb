@@ -2,11 +2,22 @@
 
 <br />
 
+<td><%= button_to 'Go Back', :action => 'go_to_page' %></td>
+
+<br />
 
 <ul id="page-list">
 	<% @page.chapters.each do |chapter| %>
 		<li id="chapter_<%= chapter.id %>">
-			<%= chapter.title2 %> -- <%= chapter.description %> -- <%= chapter.image_url %>
+			<% if !chapter.title2.blank? -%>
+				<h2><%= chapter.title2 %></h2>
+			<%end -%>
+			<% if !chapter.description.blank? -%>
+				<%= chapter.description %>
+			<%end -%>
+			<% if !chapter.image_url.blank? -%>	
+				<%=image_tag @link_image + "r_" + chapter.image_url, :style => "border: 0px solid ;" %>
+			<%end -%>
 		</li>
 	<% end %>
 </ul>
